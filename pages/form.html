@@ -58,108 +58,108 @@
       </nav>
       <main class="container-md my-4 g-0">
         <h1 class="mb-3">Nuovo Libro</h1>
-        <div class="d-flex my-3">
-          <div class="flex-fill me-2">
-            <label for="name" class="mb-2 fs-5">*Nome Autore</label>
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Inserisci il nome dell'autore"
-                id="name"
-                required
-              />
+        <form action="">
+            <div class="d-flex my-3">
+              <div class="flex-fill me-2">
+                <label for="name" class="mb-2 fs-5">*Nome Autore</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci il nome dell'autore"
+                    id="name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="flex-fill ms-2">
+                <label for="surname" class="mb-2 fs-5">*Cognome Autore</label>
+                <div class="input-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Inserisci il cognome dell'autore"
+                    id="surname"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="flex-fill ms-2">
-            <label for="surname" class="mb-2 fs-5">*Cognome Autore</label>
-            <div class="input-group">
-              <input
-                type="text"
-                class="form-control"
-                placeholder="Inserisci il cognome dell'autore"
-                id="surname"
-                required
-              />
+            <div class="my-3">
+              <label for="title" class="mb-2 fs-5">*Titolo</label>
+              <div class="input-group">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Inserisci il titolo del libro"
+                  id="title"
+                  required
+                />
+              </div>
+              <p class="text-secondary fs-6">Titolo versione italiana</p>
             </div>
-          </div>
-        </div>
-        <div class="my-3">
-          <label for="title" class="mb-2 fs-5">*Titolo</label>
-          <div class="input-group">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Inserisci il titolo del libro"
-              id="title"
-              required
-            />
-          </div>
-          <p class="text-secondary fs-6">Titolo versione italiana</p>
-        </div>
-        <div class="row row-cols-md-3 mt-3 mb-5 gx-4">
-          <div class="col">
-            <label for="genere" class="mb-2 fs-5">Genere</label>
-            <select
-              class="form-select"
-              aria-label="Default select example"
-              id="genere"
-            >
-              <option selected>Scegli il genere</option>
-              <option value="1">Commedia</option>
-              <option value="2">Romanzo</option>
-              <option value="3">Thriller</option>
-              <option value="4">Giallo</option>
-              <option value="5">kids</option>
-            </select>
-          </div>
-          <div class="col">
-            <label for="year" class="mb-2 fs-5">Anno di pubblicazione</label>
-            <div class="input-group">
-              <input
-                type="month"
-                class="form-control"
-                placeholder="Inserisci l'anno"
-                id="year"
-              />
+            <div class="row row-cols-1 row-cols-md-3 mt-3 mb-5 gx-4">
+              <div class="col">
+                <label for="genere" class="mb-2 fs-5">Genere</label>
+                <select
+                  class="form-select"
+                  aria-label="Default select example"
+                  id="genere"
+                >
+                  <option selected>Scegli il genere</option>
+                  <option value="1">Commedia</option>
+                  <option value="2">Romanzo</option>
+                  <option value="3">Thriller</option>
+                  <option value="4">Giallo</option>
+                  <option value="5">kids</option>
+                </select>
+              </div>
+              <div class="col">
+                <label for="year" class="mb-2 fs-5">Anno di pubblicazione</label>
+                <div class="input-group">
+                  <input
+                    type="month"
+                    class="form-control"
+                    placeholder="Inserisci l'anno"
+                    id="year"
+                  />
+                </div>
+              </div>
+              <div class="col">
+                <label for="ISBN" class="mb-2 fs-5">*ISBN#</label>
+                <div class="input-group">
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Inserire il codice ISBN#"
+                    id="ISBN"
+                    required
+                  />
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="col">
-            <label for="ISBN" class="mb-2 fs-5">*ISBN#</label>
-            <div class="input-group">
-              <input
-                type="password"
+            <div class="pt-5 mb-3 border border-0 border-top">
+              <label for="note" class="mb-2 fs-5" aria-required="true">Note</label>
+              <textarea
                 class="form-control"
-                placeholder="Inserire il codice ISBN#"
-                id="ISBN"
-                required
-              />
+                id="note"
+                rows="4"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
             </div>
-          </div>
-        </div>
-        <hr />
-        <div class="mt-5 mb-3">
-          <label for="note" class="mb-2 fs-5" aria-required="true">Note</label>
-          <textarea
-            class="form-control"
-            id="note"
-            rows="4"
-            placeholder="Inserisci eventuali note sul libro"
-          ></textarea>
-        </div>
-        <div class="form-check fs-5">
-          <input
-            class="form-check-input"
-            type="checkbox"
-            value=""
-            id="check"
-          />
-          <label class="form-check-label fs-5" for="check">
-            Disponibile anche in digitale
-          </label>
-        </div>
-        <br />
-        <button type="submit" class="btn btn-primary fs-5">Aggiungi Libro</button>
+            <div class="form-check fs-5">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value=""
+                id="check"
+              />
+              <label class="form-check-label fs-5" for="check">
+                Disponibile anche in digitale
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary my-4 fs-5">Aggiungi Libro</button>
+        </form>
       </main>
     </header>
 
