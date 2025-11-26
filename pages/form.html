@@ -39,7 +39,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active text-light" href="#"
+                <a class="nav-link active text-white-50" href="#"
                   >Catalogo libri</a
                 >
               </li>
@@ -60,42 +60,39 @@
         <h1 class="mb-3">Nuovo Libro</h1>
         <div class="d-flex my-3">
           <div class="flex-fill me-2">
-            <label for="name" class="mb-2 fs-5">Nome Autore</label>
+            <label for="name" class="mb-2 fs-5">*Nome Autore</label>
             <div class="input-group">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Inserisci il nome dell'autore"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
                 id="name"
+                required
               />
             </div>
           </div>
           <div class="flex-fill ms-2">
-            <label for="surname" class="mb-2 fs-5">Cognome Autore</label>
+            <label for="surname" class="mb-2 fs-5">*Cognome Autore</label>
             <div class="input-group">
               <input
                 type="text"
                 class="form-control"
                 placeholder="Inserisci il cognome dell'autore"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
                 id="surname"
+                required
               />
             </div>
           </div>
         </div>
         <div class="my-3">
-          <label for="title" class="mb-2 fs-5">Titolo</label>
+          <label for="title" class="mb-2 fs-5">*Titolo</label>
           <div class="input-group">
             <input
               type="text"
               class="form-control"
               placeholder="Inserisci il titolo del libro"
-              aria-label="Username"
-              aria-describedby="basic-addon1"
               id="title"
+              required
             />
           </div>
           <p class="text-secondary fs-6">Titolo versione italiana</p>
@@ -123,29 +120,26 @@
                 type="month"
                 class="form-control"
                 placeholder="Inserisci l'anno"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
                 id="year"
               />
             </div>
           </div>
           <div class="col">
-            <label for="ISBN" class="mb-2 fs-5">ISBN#</label>
+            <label for="ISBN" class="mb-2 fs-5">*ISBN#</label>
             <div class="input-group">
               <input
                 type="password"
                 class="form-control"
                 placeholder="Inserire il codice ISBN#"
-                aria-label="Username"
-                aria-describedby="basic-addon1"
                 id="ISBN"
+                required
               />
             </div>
           </div>
         </div>
         <hr />
         <div class="mt-5 mb-3">
-          <label for="note" class="mb-2 fs-5">Note</label>
+          <label for="note" class="mb-2 fs-5" aria-required="true">Note</label>
           <textarea
             class="form-control"
             id="note"
@@ -165,7 +159,7 @@
           </label>
         </div>
         <br />
-        <button type="button" class="btn btn-primary fs-5">Aggiungi Libro</button>
+        <button type="submit" class="btn btn-primary fs-5">Aggiungi Libro</button>
       </main>
     </header>
 
